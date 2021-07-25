@@ -1,5 +1,12 @@
 (() => {
 
+        class Accordion{
+          //初期化（一番最初に実行される）
+          constructor(){
+
+          }
+        }
+
         const $elm = document.querySelector("#js-accordion");
         const $trigger = $elm.getElementsByTagName("a");
 
