@@ -3,19 +3,19 @@
         class Accordion{
           //初期化（一番最初に実行される）
           constructor(){
-
+            const $elm = document.querySelector("#js-accordion");
+            const $trigger = $elm.getElementsByTagName("a");
+    
+            const triggerLen = $trigger.length;
+            let index = 0;
+            while (index < triggerLen) {
+              $trigger[index].addEventListener("click", (e) => clickHandler(e));
+              index++;
+            }
           }
         }
 
-        const $elm = document.querySelector("#js-accordion");
-        const $trigger = $elm.getElementsByTagName("a");
-
-        const triggerLen = $trigger.length;
-        let index = 0;
-        while (index < triggerLen) {
-          $trigger[index].addEventListener("click", (e) => clickHandler(e));
-          index++;
-        }
+        
         
         //クリックしたら実行される処理
         const clickHandler = (e) => {
