@@ -4,8 +4,8 @@
           //初期化（一番最初に実行される）
           constructor(obj){//()にobjと入れると下のfuckingAccordionが呼ばれる
             console.log("obj",obj.hookName);
-            const $elm = document.querySelector("#js-accordion");
-            const $trigger = $elm.getElementsByTagName("a");
+            const $elm = document.querySelector(obj.hookName);
+            const $trigger = $elm.getElementsByTagName(obj.tagName);
     
             const triggerLen = $trigger.length;
             let index = 0;
