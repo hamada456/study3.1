@@ -15,17 +15,17 @@
           }
 
           //クリックしたら実行される処理
-        const clickHandler = (e) => {
-          e.preventDefault();
+          clickHandler = (e) => {
+            e.preventDefault();
 
-          const $target = e.currentTarget;
-          const $content = $target.nextElementSibling;
+            const $target = e.currentTarget;
+            const $content = $target.nextElementSibling;
 
-          if($content.style.display === "block"){
-            $content.style.display = "none";
-          }else{
-            $content.style.display = "block";
-          }
+            if($content.style.display === "block"){
+              $content.style.display = "none";
+            }else{
+              $content.style.display = "block";
+            }
         };
 
         }  
