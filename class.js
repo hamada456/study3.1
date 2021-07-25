@@ -10,7 +10,8 @@
             const triggerLen = $trigger.length;
             let index = 0;
             while (index < triggerLen) {
-              $trigger[index].addEventListener("click", (e) => clickHandler(e));
+            //thisはクラスそのもの
+              $trigger[index].addEventListener("click", (e) => this.clickHandler(e));
               index++;
             }
           }
