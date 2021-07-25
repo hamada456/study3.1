@@ -26,8 +26,9 @@
             }else{
               $content.style.display = "block";
             }
-        };
-
+          }
         }  
 
+        const fuckingAccordion = new Accordion();
+        
 })();
