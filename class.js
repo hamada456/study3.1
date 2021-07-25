@@ -13,11 +13,8 @@
               index++;
             }
           }
-        }
 
-        
-        
-        //クリックしたら実行される処理
+          //クリックしたら実行される処理
         const clickHandler = (e) => {
           e.preventDefault();
 
@@ -30,5 +27,7 @@
             $content.style.display = "block";
           }
         };
+
+        }  
 
 })();
