@@ -3,9 +3,9 @@
         class Accordion{
           //初期化（一番最初に実行される）
           constructor(obj){//()にobjと入れると下のfuckingAccordionが呼ばれる
-            console.log("obj",obj.hookName);
+            console.log("obj",obj.tagName);
             const $elm = document.querySelector(obj.hookName);
-            const $trigger = $elm.getElementsByTagName(obj.tagName);
+			      const $trigger = $elm.getElementsByTagName(obj.tagName);
     
             const triggerLen = $trigger.length;
             let index = 0;
@@ -17,7 +17,7 @@
           }
 
           //クリックしたら実行される処理
-          clickHandler = (e) => {
+          clickHandler(e){
             e.preventDefault();
 
             const $target = e.currentTarget;
