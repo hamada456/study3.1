@@ -14,7 +14,12 @@
               $trigger[index].addEventListener("click", (e) => this.clickHandler(e));
               index++;
             }
+            this.actionUnko();
           }
+
+          actionUnko(){
+            console.log("UNKO!!!");
+          };
 
           //クリックしたら実行される処理
           clickHandler(e){
