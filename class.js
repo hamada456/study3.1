@@ -2,7 +2,8 @@
 
         class Accordion{
           //初期化（一番最初に実行される）
-          constructor(){
+          constructor(obj){//()にobjと入れると下のfuckingAccordionが呼ばれる
+            console.log("obj",obj.hookName);
             const $elm = document.querySelector("#js-accordion");
             const $trigger = $elm.getElementsByTagName("a");
     
@@ -29,6 +30,9 @@
           }
         }  
 
-        const fuckingAccordion = new Accordion();
-        
+        const fuckingAccordion = new Accordion({
+            hookName: "#js-faq", //"#js-accordion"を書き換える
+            tagName: "p"//"a"を書き換える
+        });
+
 })();
